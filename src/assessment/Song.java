@@ -21,6 +21,10 @@ public class Song {
         setReleaseYear(releaseYear);
     }
 
+    public Song(){
+        this(1,1, "", "", "",0,2010);
+    }
+
     public int getDuration() {
         return duration;
     }
