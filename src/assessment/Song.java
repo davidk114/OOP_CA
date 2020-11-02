@@ -22,7 +22,7 @@ public class Song {
     }
 
     public Song(){
-        this(1,1, "", "", "",0,2010);
+        this(1,1, "N/A", "N/A", "N/A",0,2010);
     }
 
     public int getDuration() {
@@ -82,7 +82,9 @@ public class Song {
     }
 
     public String toString() {
-        return(getTrackNumber() + "\t" + getTitle() +
-                "\t" + getArtist());
+        return(getTrackNumber() + "    " + getTitle() +
+                "    " + getArtist() + "    " + getDuration() + "    " + getGenre()+ "    " + getReleaseYear());
     }
+
+
 }

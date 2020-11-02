@@ -36,10 +36,6 @@ public Album(String name, String producer, int releaseYear, Song song){
         this.songs = songs;
     }
 
-    //    public void setSongs(Song[] songs) {
-//this.songs = songs;
-//}
-
     public int getReleaseYear() {
         return releaseYear;
     }
@@ -52,8 +48,43 @@ public Album(String name, String producer, int releaseYear, Song song){
         return producer;
     }
 
+ /*   public String playTrack(String trackNo){
+
+
+        String choiceAsString="", playMessage="";
+        int choice;
+
+        choice = Integer.parseInt(choiceAsString);
+        if(choice == trackNo){
+            playMessage = "Currently Playing: \n";
+        }else{
+            playMessage = "Invalid Track Number";
+        }
+
+        return playMessage;
+    }
+*/
+    public int getPlayingTime(Song song1){
+    int total;
+
+    total = song1.getDuration();
+
+    return total;
+
+    }
+
+    public int getNumberOfTracks(Song song1){
+        int noOfTracks;
+
+    }
+
+
+
 
     public String toString() {
-        return "";
+        return ("Name: " + getName() + "\n\nProducer: " + getProducer() + "\n\nRelease Year: " + getReleaseYear() +
+        "\n\nNumber of Tracks: " + "\n\nTotal Playing Time: " + getPlayingTime(songs) + "\n\n Total Playing Time: " +
+                "\n\n======Album Tracks======" +
+                "\n\nTrack No    " + "Title    " + "Artist    " + "\n\n" + songs.toString());
     }
 }
